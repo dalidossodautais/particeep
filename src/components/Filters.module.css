@@ -1,0 +1,47 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 16px;
+  margin-left: auto;
+  width: 0;
+}
+
+.wrapper__spacing {
+  flex: 1;
+}
+
+.wrapper__categories {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-left: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapper__categories__button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: inherit;
+  gap: 4px;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper__categories__button:hover::after {
+  background-color: black;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}

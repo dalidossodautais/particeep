@@ -1,0 +1,86 @@
+.wrapper {
+  background-color: rgb(235, 229, 229);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  position: relative;
+}
+
+.wrapper__title {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.wrapper__reception {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wrapper__reception__gauge {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.wrapper__reception__gauge__positive {
+  background-color: lightblue;
+  height: 4px;
+}
+
+.wrapper__reception__gauge__negative {
+  background-color: lightcoral;
+  height: 4px;
+}
+
+.wrapper__reception__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper__reception__buttons__button--positive {
+  color: rgb(35, 144, 180);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.wrapper__reception__buttons__button--negative {
+  color: rgb(192, 54, 75);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.wrapper__reception__buttons__button__number {
+  font-size: 12px;
+}
+
+.wrapper__suppression_button {
+  align-items: center;
+  background-color: rgb(218, 106, 106);
+  border: none;
+  border-radius: 50%;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  height: 15px;
+  justify-content: center;
+  outline: inherit;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: -5px;
+  width: 15px;
+}
+
+.wrapper__suppression_button:hover {
+  background-color: rgb(227, 156, 156);
+}

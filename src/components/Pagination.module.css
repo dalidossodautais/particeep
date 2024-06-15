@@ -1,0 +1,25 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.wrapper__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.wrapper__buttons__button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.wrapper__buttons__button:disabled {
+  color: lightgrey;
+  cursor: default;
+}
